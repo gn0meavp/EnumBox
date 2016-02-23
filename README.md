@@ -37,3 +37,16 @@ enum FieldIdBox {
     }
 }
 ```
+
+Sample:
+
+```
+let fields = [
+    FieldIdBox(fieldId: "Name_Field"),
+    FieldIdBox(fieldId: "Phone_Field"),
+    FieldIdBox(fieldId: "Email_Field"),
+    FieldIdBox(fieldId: "Address_Field"),       // custom field
+]
+
+print(fields.map { $0.rawValue() })
+```
